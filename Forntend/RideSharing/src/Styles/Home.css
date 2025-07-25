@@ -1,0 +1,327 @@
+/* New Modern Home Redesign */
+.home-modern-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #232526 60%, #1fd1f9 100%);
+  /* background-image: url('../Images/Background.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden !important;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Modern Navbar Styles */
+.new-navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(30, 41, 59, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  backdrop-filter: blur(2px);
+}
+
+.navbar-title {
+  color: #1fd1f9;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 1.1rem;
+  border-radius: 20px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.navbar-link:hover {
+  background: #1fd1f9;
+  color: #1a2233;
+}
+
+/* Hide all scrollbars for a clean look */
+.home-modern-bg, .home-modern-bg * {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.home-modern-bg::-webkit-scrollbar, .home-modern-bg *::-webkit-scrollbar {
+  display: none;
+}
+
+.home-modern-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 41, 59, 0.7);
+  z-index: 0;
+}
+
+.new-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
+  margin-top: 70px; /* space for navbar */
+}
+
+.new-hero-content {
+  background: rgba(255,255,255,0.10);
+  border-radius: 24px;
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  text-align: center;
+  max-width: 480px;
+  margin: 2.5rem auto 0 auto;
+  backdrop-filter: blur(2px);
+}
+
+.new-title {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.new-tagline {
+  font-size: 1.2rem;
+  color: #e0e7ef;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.new-cta-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.new-login {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.new-login:hover {
+  background: #fff;
+  color: #1fd1f9;
+  border-color: #1fd1f9;
+}
+
+.new-signup {
+  background: #1fd1f9;
+  color: #fff;
+  border: 2px solid #1fd1f9;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.new-signup:hover {
+  background: #fff;
+  color: #1fd1f9;
+  border-color: #1fd1f9;
+}
+
+/* About, Help, Contact Modern Card Styles */
+.about, .help, .contact {
+  background: rgba(255,255,255,0.13);
+  border-radius: 22px;
+  box-shadow: 0 6px 24px rgba(35,41,70,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 100px auto 0 auto;
+  max-width: 520px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+
+.about {
+  background: linear-gradient(135deg, #1fd1f9 0%, #4f8cff 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(31,209,249,0.18);
+}
+
+.help {
+  background: linear-gradient(135deg, #fbbf24 0%, #ff6b6b 100%);
+  color: #232946;
+  box-shadow: 0 8px 32px rgba(251,191,36,0.18);
+}
+
+.contact {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #232946;
+  box-shadow: 0 8px 32px rgba(67,233,123,0.18);
+}
+
+.about h2 {
+  color: #fff;
+}
+.help h2 {
+  color: #ff6b6b;
+}
+.contact h2 {
+  color: #43e97b;
+}
+
+.about p, .help p, .contact p, .about ul, .help ul, .contact ul {
+  color: #e0e7ef;
+  font-size: 1.13rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.about ul, .help ul, .contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+
+.about li, .help li, .contact li {
+  margin-bottom: 0.7rem;
+}
+
+.about a, .help a, .contact a {
+  color: #1fd1f9;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+
+.about a:hover, .help a:hover, .contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about a {
+  color: #232946;
+}
+.help a {
+  color: #ff6b6b;
+}
+.contact a {
+  color: #38f9d7;
+}
+
+.about a:hover {
+  color: #fff;
+}
+.help a:hover {
+  color: #232946;
+}
+.contact a:hover {
+  color: #fff;
+}
+
+.about, .help, .contact {
+  font-weight: bold;
+  color: #111 !important;
+}
+
+.about h2, .help h2, .contact h2 {
+  color: #111 !important;
+  font-weight: 900;
+}
+
+.about a, .help a, .contact a {
+  color: #222 !important;
+  font-weight: 900;
+}
+
+.about a:hover, .help a:hover, .contact a:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 700px) {
+  .new-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 1rem;
+  }
+  .navbar-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-links {
+    gap: 0.7rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .new-hero {
+    margin-top: 60px;
+    min-height: 70vh;
+  }
+  .new-hero-content {
+    padding: 2rem 1rem 1.5rem 1rem;
+    max-width: 98vw;
+    margin: 1.5rem auto 0 auto;
+  }
+  .new-title {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .new-tagline {
+    margin-bottom: 1.5rem;
+  }
+  .new-cta-group {
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+  .new-login, .new-signup {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  .about, .help, .contact {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+    margin: 80px auto 0 auto;
+  }
+  .about h2, .help h2, .contact h2 {
+    font-size: 1.3rem;
+  }
+}
